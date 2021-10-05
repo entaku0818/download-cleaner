@@ -14,6 +14,9 @@
 		AE822AEE270AC53B00AD347E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE822AEC270AC53B00AD347E /* Main.storyboard */; };
 		AE822AFA270AC53B00AD347E /* download_cleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE822AF9270AC53B00AD347E /* download_cleanerTests.swift */; };
 		AE822B05270AC53B00AD347E /* download_cleanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE822B04270AC53B00AD347E /* download_cleanerUITests.swift */; };
+		AE822B19270AC5C100AD347E /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE822B18270AC5C100AD347E /* FinderSync.swift */; };
+		AE822B1E270AC5C100AD347E /* FinderSyncDownloadCleaner.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE822B16270AC5C100AD347E /* FinderSyncDownloadCleaner.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE822B24270ACA4F00AD347E /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE822B23270ACA4F00AD347E /* Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = AE822ADF270AC53A00AD347E;
 			remoteInfo = "download-cleaner";
 		};
+		AE822B1C270AC5C100AD347E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE822AD8270AC53A00AD347E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE822B15270AC5C100AD347E;
+			remoteInfo = FinderSyncDownloadCleaner;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE822B22270AC5C100AD347E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE822B1E270AC5C100AD347E /* FinderSyncDownloadCleaner.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE822AE0270AC53A00AD347E /* download-cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "download-cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +72,11 @@
 		AE822B00270AC53B00AD347E /* download-cleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "download-cleanerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE822B04270AC53B00AD347E /* download_cleanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = download_cleanerUITests.swift; sourceTree = "<group>"; };
 		AE822B06270AC53B00AD347E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE822B16270AC5C100AD347E /* FinderSyncDownloadCleaner.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinderSyncDownloadCleaner.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE822B18270AC5C100AD347E /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		AE822B1A270AC5C100AD347E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE822B1B270AC5C100AD347E /* FinderSyncDownloadCleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderSyncDownloadCleaner.entitlements; sourceTree = "<group>"; };
+		AE822B23270ACA4F00AD347E /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +101,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE822B13270AC5C100AD347E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +117,7 @@
 				AE822AE2270AC53A00AD347E /* download-cleaner */,
 				AE822AF8270AC53B00AD347E /* download-cleanerTests */,
 				AE822B03270AC53B00AD347E /* download-cleanerUITests */,
+				AE822B17270AC5C100AD347E /* FinderSyncDownloadCleaner */,
 				AE822AE1270AC53A00AD347E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +128,7 @@
 				AE822AE0270AC53A00AD347E /* download-cleaner.app */,
 				AE822AF5270AC53B00AD347E /* download-cleanerTests.xctest */,
 				AE822B00270AC53B00AD347E /* download-cleanerUITests.xctest */,
+				AE822B16270AC5C100AD347E /* FinderSyncDownloadCleaner.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +165,17 @@
 			path = "download-cleanerUITests";
 			sourceTree = "<group>";
 		};
+		AE822B17270AC5C100AD347E /* FinderSyncDownloadCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				AE822B18270AC5C100AD347E /* FinderSync.swift */,
+				AE822B1A270AC5C100AD347E /* Info.plist */,
+				AE822B1B270AC5C100AD347E /* FinderSyncDownloadCleaner.entitlements */,
+				AE822B23270ACA4F00AD347E /* Extention.swift */,
+			);
+			path = FinderSyncDownloadCleaner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +186,12 @@
 				AE822ADC270AC53A00AD347E /* Sources */,
 				AE822ADD270AC53A00AD347E /* Frameworks */,
 				AE822ADE270AC53A00AD347E /* Resources */,
+				AE822B22270AC5C100AD347E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE822B1D270AC5C100AD347E /* PBXTargetDependency */,
 			);
 			name = "download-cleaner";
 			productName = "download-cleaner";
@@ -183,6 +234,23 @@
 			productReference = AE822B00270AC53B00AD347E /* download-cleanerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AE822B15270AC5C100AD347E /* FinderSyncDownloadCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE822B1F270AC5C100AD347E /* Build configuration list for PBXNativeTarget "FinderSyncDownloadCleaner" */;
+			buildPhases = (
+				AE822B12270AC5C100AD347E /* Sources */,
+				AE822B13270AC5C100AD347E /* Frameworks */,
+				AE822B14270AC5C100AD347E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinderSyncDownloadCleaner;
+			productName = FinderSyncDownloadCleaner;
+			productReference = AE822B16270AC5C100AD347E /* FinderSyncDownloadCleaner.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +271,9 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = AE822ADF270AC53A00AD347E;
 					};
+					AE822B15270AC5C100AD347E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = AE822ADB270AC53A00AD347E /* Build configuration list for PBXProject "download-cleaner" */;
@@ -221,6 +292,7 @@
 				AE822ADF270AC53A00AD347E /* download-cleaner */,
 				AE822AF4270AC53B00AD347E /* download-cleanerTests */,
 				AE822AFF270AC53B00AD347E /* download-cleanerUITests */,
+				AE822B15270AC5C100AD347E /* FinderSyncDownloadCleaner */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +315,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AE822AFE270AC53B00AD347E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE822B14270AC5C100AD347E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,6 +357,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE822B12270AC5C100AD347E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE822B24270ACA4F00AD347E /* Extention.swift in Sources */,
+				AE822B19270AC5C100AD347E /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -290,6 +378,11 @@
 			isa = PBXTargetDependency;
 			target = AE822ADF270AC53A00AD347E /* download-cleaner */;
 			targetProxy = AE822B01270AC53B00AD347E /* PBXContainerItemProxy */;
+		};
+		AE822B1D270AC5C100AD347E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE822B15270AC5C100AD347E /* FinderSyncDownloadCleaner */;
+			targetProxy = AE822B1C270AC5C100AD347E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,6 +516,7 @@
 		AE822B0A270AC53B00AD347E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "download-cleaner/download_cleaner.entitlements";
@@ -444,6 +538,7 @@
 		AE822B0B270AC53B00AD347E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "download-cleaner/download_cleaner.entitlements";
@@ -546,6 +641,48 @@
 			};
 			name = Release;
 		};
+		AE822B20270AC5C100AD347E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinderSyncDownloadCleaner/FinderSyncDownloadCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YZQY4C47E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderSyncDownloadCleaner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.entaku.download-cleaner.FinderSyncDownloadCleaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE822B21270AC5C100AD347E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinderSyncDownloadCleaner/FinderSyncDownloadCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YZQY4C47E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FinderSyncDownloadCleaner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.entaku.download-cleaner.FinderSyncDownloadCleaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +718,15 @@
 			buildConfigurations = (
 				AE822B10270AC53B00AD347E /* Debug */,
 				AE822B11270AC53B00AD347E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE822B1F270AC5C100AD347E /* Build configuration list for PBXNativeTarget "FinderSyncDownloadCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE822B20270AC5C100AD347E /* Debug */,
+				AE822B21270AC5C100AD347E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
